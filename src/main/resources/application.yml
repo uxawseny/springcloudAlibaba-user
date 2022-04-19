@@ -23,7 +23,7 @@ spring:
       primary: db1
       datasource:
         db1:
-          url: jdbc:mysql://localhost:3307/cloudalibaba?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowMultiQueries=true
+          url: jdbc:mysql://localhost:3307/cloudalibaba?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&rewriteBatchedStatements=true&allowMultiQueries=true&allowPublicKeyRetrieval=true
           username: root
           password: 12306
           driver-class-name: com.mysql.cj.jdbc.Driver
