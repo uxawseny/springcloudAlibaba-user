@@ -25,16 +25,9 @@ public class SpringDocConfig {
     @Bean
     public GroupedOpenApi publicApi() {
         return GroupedOpenApi.builder()
-                .group("brand")
-                .pathsToMatch("/brand/**")
+                .group("user")
+                .pathsToMatch("/**/**")
                 .build();
     }
 
-    @Bean
-    public GroupedOpenApi adminApi() {
-        return GroupedOpenApi.builder()
-                .group("admin")
-                .pathsToMatch("/admin/**")
-                .build();
-    }
 }
